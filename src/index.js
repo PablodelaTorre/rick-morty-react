@@ -1,6 +1,8 @@
 import React from 'react';
-import './index.css';
+import ReactDOM from 'react-dom';
+import './scss/index.scss'
 import App from './App';
+import "bootstrap/dist/css/bootstrap.min.css"
 
 
 ReactDOM.render(
@@ -9,5 +11,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
 
