@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Formulario from './components/Formulario'
 import PedidoDatos from './components/PedidoDatos'
 
 const App = () => {
 
   const [nombrePersonajes, setNombrePersonajes] = useState("")
+
 
   return (
     <div className='container-fluid fondo'>
