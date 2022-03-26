@@ -23,11 +23,16 @@ const Formulario = ({setNombrePersonajes}) => {
         setNombrePersonajes(nombre.trim().toLowerCase())
         reset()
     }
+
+    const handleReiniciar = () =>{
+        setNombrePersonajes("")
+    }
     
     return (
         <form onSubmit={handleSubmit} className="d-flex flex-column justify-content-center align-items-center">
             <input className='form-control my-3' value={nombre} name="nombre" onChange={handleChange} type="text" placeholder='Ingrese un personaje' />
-            <button type='submit' className='btn btn-info'>Buscar</button>
+            <button type='submit' className='boton-buscar my-2'>Buscar</button>
+            <button type='button' className='boton-reiniciar mt-1' onClick={handleReiniciar}>Reiniciar</button>
         </form>
     )
 }

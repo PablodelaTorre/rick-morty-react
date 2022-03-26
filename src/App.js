@@ -7,8 +7,8 @@ const App = () => {
   const [nombrePersonajes, setNombrePersonajes] = useState("")
 
   return (
-    <div className='container'>
-      <h1 className='titulo'>Rick and morty App</h1>
+    <div className='container-fluid fondo'>
+      <h1 className='titulo my-3 d-flex justify-content-center '>Rick and morty App</h1>
         <Formulario setNombrePersonajes={setNombrePersonajes}/>  
         <PedidoDatos nombrePersonajes={nombrePersonajes}/>
     </div>

@@ -1,9 +1,37 @@
-body {
-    margin: 0;
-    padding: 0;
+.fondo{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, #bd3ae8 0%, #e83aab 35%, rgba(0,212,255,1) 100%);
+    background: radial-gradient();
 }
 
 .titulo {
-    background-color: black;
+    background-color: rgba(0,0,0, 0.2);
     color: white;
+    border-radius: 5rem;
+}
+
+.boton-buscar {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 15vw;
+    border: 0.5px;
+    border-radius: 0.2rem;
+    transition: 0.3s;
+}
+
+.boton-buscar:hover{
+    transform: scale(1.1);
+}
+
+.boton-reiniciar {
+    color: white;
+    background-color: rgba(0,0, 0, 0.2);
+    width: 15vw;
+    border: 0.5px;
+    border-radius: 0.2rem;
+    transition: 0.3s;
+}
+
+.boton-reiniciar:hover{
+    transform: scale(1.1);
 }
